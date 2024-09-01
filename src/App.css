@@ -1,0 +1,179 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #f1f1f1;
+  background-color: #251c47;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #312c62;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+}
+
+.blox-logo {
+  width: 120px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #e6ca63;
+}
+
+.phone-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.phone-input select,
+.phone-input input {
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #2e265c;
+  color: #f1f1f1;
+}
+
+.phone-input select:focus,
+.phone-input input:focus {
+  outline: none;
+  border-color: #e6ca63;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #899f76;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  color: #e6ca63;
+}
+
+h4 {
+  margin: 30px 0;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.login-options button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #666;
+  color: white;
+  border: 1px solid #e6ca63;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.login-options button:hover {
+  background-color: #555;
+}
+
+.send-otp {
+  background-color: #e6ca63;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #251c47;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.send-otp:hover {
+  background-color: #d4b755;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .phone-input {
+    flex-direction: row;
+  }
+
+  
+  
+  .phone-input select {
+    width: 80px; /* Set a fixed smaller width for the country code selector */
+    margin-right: 10px; /* Add some space between the select and input fields */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2e265c;
+    color: #f1f1f1;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .phone-input input {
+    flex: 1; /* Make the input field take up the remaining space */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2e265c;
+    color: #f1f1f1;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .login-box {
+    max-width: 450px;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .send-otp {
+    font-size: 20px;
+  }
+}
