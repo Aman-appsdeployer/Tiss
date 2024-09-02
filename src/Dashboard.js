@@ -104,7 +104,7 @@
 //                   ) : (
 //                     actionStatus[rowIndex] !== 'rejected' && (
 //                       <button
-//                         className="accept-button px-4 py-2 bg-green-500 text-white rounded disabled:opacity-50"
+//                         className="accept-button px-4 py-2  ml-16 bg-green-500 text-white rounded disabled:opacity-50"
 //                         onClick={() => handleCreditToWallet(rowIndex, row['Description'], row['Amount Credited'])}
 //                         disabled={loading || actionStatus[rowIndex] === 'rejected'}
 //                       >
@@ -114,7 +114,7 @@
 //                   )}
 //                   {actionStatus[rowIndex] !== 'credited' && (
 //                     <button
-//                       className="reject-button px-4 py-2 bg-red-500 text-white rounded disabled:opacity-50 ml-2"
+//                       className="reject-button px-4 py-2  ml-16 bg-red-500 text-white rounded disabled:opacity-50 ml-2"
 //                       onClick={() => handleReject(rowIndex)}
 //                       disabled={loading || actionStatus[rowIndex] === 'credited'}
 //                     >
